@@ -1,11 +1,11 @@
 
 def get_balance():
     """Повертає список клієнтів який отримує з файлу 'balance.txt'
-    
+
     Returns:
-        balance_list: список клієнтів"""
-        with open (".\data\balance.txt") as balance_file:
-            from_file = balance_file.readlines()    ]
+    balance_list: список клієнтів"""
+    with open("./data/balance.txt","a",encoding='UTF-8') as balance_file:
+        from_file = balance_file.readlines()
 
     balance_list = []
 
