@@ -3,8 +3,8 @@ def get_balance():
 
     Returns:
     balance_list: список клієнтів"""
-    with open("./data/balance.txt") as balance_file:
-        from_file = balance_file.readlines()
+    with open("./data/balance.txt") as file:
+        from_file = file.readlines()
 
     balance_list = []
 
@@ -51,9 +51,6 @@ def show_indexes_balance(indexes_balance):
         if balance2_code_from < balance2[0] < balance2_code_to:
             print("Код рядка: {:6} Показники: {:12}".format(balance2[0], balance2[1]))
 
-
-balance_dump = get_balance()
-show_balance(balance_dump)
-
-indexes_balance = get_indexes_balance()
-show_indexes_balance(indexes_balance)
+a = get_balance()
+for b in a:
+    print(b)
